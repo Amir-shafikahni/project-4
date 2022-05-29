@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height:950px;
+    width: 100%;
+    background-image:linear-gradient(135deg , rgb(1,82,172), rgb(218 , 159 , 67));
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+.Login-form{
+    background-image:linear-gradient(rgba(0,0,0,0.3) , rgba(0,0,0,0.4)) , url(../img/pic1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    margin: 150px auto;
+    text-align: center;
+    height: 600px;
+}
+
+.Login-form a:nth-child(1) {
+    color: rgba(256,256,256);
+    transition: 0.3s;
+}
+
+.Login-form a:nth-child(2) {
+    color: rgb(256,256,256,65%);
+    transition: 0.3s;
+}
+
+.Login-form a:hover{
+    color: #00adb5;
+}
+
+.Login-form label{
+    cursor: pointer;
+}
+
+.Login-form input{
+    border-radius: 10px;
+    background-color: rgba(256, 256, 256, 40%);
+    border: none;
+    color: white;
+}
+
+.Login-form input:focus{
+    outline: none;
+    background-color: rgba(256, 256, 256, 70%);
+}
+
+.Login-form button{
+    border-radius: 10px;
+}
+
+.verification-message{
+    position: relative;
+    background-color: #00adb5;
+    border-radius: 10px;
+    position: absolute;
+    left: 10px;
+    top: -100px;
+    display: none;
+    color: white;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.verification-message::after{
+    background-color:black;
+    border-radius: 2px;
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    height: 3px;
+    width: 0px;
+    animation: timer 4s linear 1;
+}
+
+@keyframes timer {
+    100%{
+        width: 100%;
+    }
+}
