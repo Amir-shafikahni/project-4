@@ -80,7 +80,7 @@ body {
     left: 0;
     height: 3px;
     width: 0px;
-    animation: timer 4s linear 1;
+    animation: timer 5s linear 1;
 }
 
 @keyframes timer {
