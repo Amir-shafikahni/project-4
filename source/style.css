@@ -54,6 +54,13 @@ body {
     background-color: rgba(256, 256, 256, 70%);
 }
 
+.username-verification , .password-verification {
+    display: inline-block;
+    border-radius: 10px;
+    background-color: rgba(0,0, 0, 30%);
+    transition: 0.3s;
+}
+
 .Login-form button{
     border-radius: 10px;
 }

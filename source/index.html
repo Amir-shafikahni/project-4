@@ -6,25 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../bootstrap/bootstrap.rtl.min.css">
     <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
+    <title>Login-form</title>
 </head>
 <body>
-    <div class="Login-form col-9 col-md-7 col-lg-6 col-xl-5">
+    <div class="Login-form col-9 col-md-7 col-lg-6 col-xl-5 shadow">
         <div class="container-fluid">
             <div class="row pt-5 pe-4 ps-4 text-end">
                 <div class="col-12">
                     <a href="#" class="text-decoration-none fs-1">Sign in</a>
                     <a href="#" class="text-decoration-none fs-4 me-4 ">Sign up</a>
                 </div>
-                <div class="col-12 text-white pt-5">
+                <div class="username-box col-12 text-white pt-5">
                     <label class="form-label fs-5" for="username">Username</label>
-                    <input class="form-control username" id="username" type="text">
+                    <input class="form-control username" id="username" type="text" onkeypress="liveUsernameVerification()">
+                    <div class="username-verification mt-2 me-1 px-2 py-1"></div>
                 </div>
-                <div class="col-12 text-white pt-4">
+                <div class="password-box col-12 text-white pt-3">
                     <label class="form-label fs-5" for="password">Password</label>
-                    <input class="form-control password" id="password" type="password">
+                    <input class="form-control password" id="password" type="password" onkeypress="livePasswordVerification()">
+                    <div class="password-verification mt-2 me-1 px-2 py-1"></div>
                 </div>
-                <div class="col-5 mt-5 pt-4 mx-auto text-center">
+                <div class="col-5 mt-4 pt-4 mx-auto text-center">
                     <button class="btn btn-outline-light fs-5" onclick="verification()">log in</button>
                 </div>
                 <div class="mt-4 text-white">
@@ -36,7 +38,7 @@
             </div>
         </div>
     </div>
-    <div class="verification-message py-2 px-3">sdafsdfasdffasf</div>
+    <div class="verification-message py-2 px-3"></div>
     <script src="../bootstrap/bootstrap.bundle.min.js"></script>
     <script src="./script.js"></script>
 </body>
