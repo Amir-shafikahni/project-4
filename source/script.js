@@ -6,7 +6,7 @@ let passwordVerification = document.querySelector(".password-verification")
 let verificationMessage = document.querySelector(".verification-message");
 
 function liveUsernameVerification() {
-  if (usernameInput.value.length < 11) {
+  if ((usernameInput.value).length < 11) {
     usernameVerification.innerHTML = "Username should be at least 12 Characters"
     usernameVerification.style.color ="#ff0000"
   }
